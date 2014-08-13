@@ -1,0 +1,108 @@
+body {
+  background: #444444;
+  border: 5px solid #777777;
+  color: #EEEEEE;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 30px;
+  padding: 50px;
+}
+ 
+a { /* This will style ALL links on the page with the text-color #00CC99 and bold */
+  color: #00CC99;
+  font-weight: bold;
+}
+ 
+small { /* small and strong tags are reserved HTML tags for giving certain emphasis to text */
+  color: #BBBBBB;
+}
+ 
+strong {
+  color: #FFFFFF;
+}
+ 
+h1 {
+  color: #FFFFFF;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 0;
+  text-align: center;
+}
+ 
+h2 {
+  color: #FFFFFF;
+}
+ 
+h3 {
+  color: #BBBBBB;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-top: 42px;
+  text-transform: uppercase;
+}
+ 
+h4 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+ 
+/*
+Because we assigned a color to body, all <p>'s will inherit that font color!
+*/
+p {
+  font-family: Georgia, serif;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+ 
+ul {
+  list-style: square;
+}
+ 
+/*
+However, this declaration will overwrite the color assigned to <p> by the body,
+because it is written after (think 'cascading') the body declaration above.
+*/
+ul p {
+  color: #BBBBBB;
+}
+ 
+/*
+The border: none; here is a what we consider a 'reset'. Browsers will out-of-the-box give some generic
+styles to elements. We can remove (or reset them) by cancelling them, and then re-declaring them.
+ 
+Here, we are removing the generic browser border which has all sides (top, right, bottom, left)
+by using border: none; and rewriting it as just a border-top.
+ 
+I will do a separate post on including a pre-built CSS reset in your styles.
+*/
+hr {
+  border: none; /* can also be border: 0; */
+  border-top: 1px solid #999999;
+  margin: 30px 0; 
+  /* This is CSS shorthand:!
+     You could also write this as: margin: 30px 0 30px 0;
+     or:
+     margin-top: 30px;
+     margin-bottom: 30px;
+     margin-left: 0;
+     margin-right: 0;
+     
+     Obviously, the shorthand is better. The less text in the CSS file, the smaller the file-size!
+  */
+}
+ 
+img {
+  border: 1px solid #999999;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+ 
+nav {
+  color: #999999;
+  text-align: center;
+}
