@@ -1,0 +1,27 @@
+body {
+	background-color: #fff;
+	font-family: Lato;
+}
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+	color: #A00;
+}
+
+h1, h1 > a{
+	color: #D00;
+}
+
+header > nav > a {
+	color: #DDD;
+	border-bottom: 2px solid #DDD;
+	padding: 5px;
+	margin: 0px 5px 0px 5px;
+}
+
+.bottomlink {
+
+}
