@@ -1,6 +1,10 @@
 body {
 	background-color: #fff;
 	font-family: Lato;
+	font-style: normal;
+	font-weight: 300;
+	color: #444;
+	margin: 20px;
 }
 
 a {
@@ -11,8 +15,10 @@ a:hover {
 	color: #A00;
 }
 
-h1, h1 > a{
+h1 > a{
 	color: #D00;
+	font-weight: 300;
+	font-size: 50px;
 }
 
 header > nav > a {
@@ -20,8 +26,45 @@ header > nav > a {
 	border-bottom: 2px solid #DDD;
 	padding: 5px;
 	margin: 0px 5px 0px 5px;
+	font-size: 20px;
+	float: center;
+}
+header > h2 {
+	color: #444;
+	font-weight: 300;
+	font-size: 25px;
+
 }
 
-.bottomlink {
+h2 > a {
+	color: #444;
+	font-size: 35px;
+	font-weight: 300;
+	padding-top: 0px;
 
+}
+
+h3 {
+	color: #DDD;
+	font-size: 35px;
+	font-weight: 300;
+	margin: 80px 0px 20px 0px;
+}
+
+h4 > a {
+	color: #D00;
+	float: right;
+	font-size: 18px;
+	margin-right: 15px;
+}
+
+hr {
+	color: #EEE;
+	margin: 20px;
+}
+
+body > nav > a {
+	color: #D00;
+	margin: 0px 5px 0px 5px;
+	
 }
