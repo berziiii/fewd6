@@ -122,6 +122,14 @@ footer {
 	padding: 30px 0px 0px 0px;
 }
 
+.company {
+	text-align: left;
+	font-style: italic;
+	color: #E34F2B;
+	font-weight: 800;
+	font-size: 40px;
+}
+
 .education {
 	background-color: #063F53;
 	color: #D2C5B7;
@@ -131,14 +139,6 @@ footer {
 	font-size: 20px;
 	border-top: 3px solid #FFF;
 	border-bottom: 3px solid #FFF;
-}
-
-.link {
-	text-align: left;
-	font-style: italic;
-	color: #E34F2B;
-	font-weight: 800;
-	font-size: 40px;
 }
 
 h2.orange {
