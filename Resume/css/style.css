@@ -38,7 +38,6 @@ section {
 
 img {
 	margin: 0px 20px 0px 20px;
-	border: solid 3px #E34F2B;
 }
 
 h1 {
@@ -104,6 +103,7 @@ footer {
 	font-weight: 700;
 	font-size: 30px;
 	background-color: #0393B8;
+	color: #000;
 }
 
 .title {
