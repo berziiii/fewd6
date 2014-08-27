@@ -14,8 +14,28 @@
 	clear: both; 
 }
 
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float:right;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.border_bar {
+	border-bottom: 44px solid #000;
+}
+
 body {
-	background-color: #fff;
+	background-color: #000;
 	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 300;
@@ -28,26 +48,36 @@ a {
 nav {
 	background-color: #fff;
 	width: 100%;
-	height: 44px;
-	line-height:44px;
 	color: #000;
-	border-bottom: 4px solid #000;
+	line-height: 44px;
 	text-align: right;
 	position: fixed;
-	z-index: 1
+	border-bottom: 4px solid #000;
+	z-index: 2
+}
+
+li {
+	list-style: none;
 }
 
 .logo {
 	position: absolute;
 	display: block;
+	left: 20px;
+	top: 10px;
+	z-index: 2;
 }
 
 .nav_link {
 	color: #000;
+	font-size: 1.2em;
 	font-weight: 700;
+	line-height: 48px;
 	text-transform: uppercase;
 	display: inline-block;
-	padding: 0px 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+
 }
 
 .nav_link:hover {
@@ -57,15 +87,15 @@ nav {
 	text-transform: uppercase;
 }
 
-.gallery_nav_wrapper {
+.gallery_nav_container {
 	padding-top: 44px;
 	background-color: #000;
 }
 
 .gallery_nav {
-	background-color: #000;
 	width: 25%;
 	display: inline-block;
+	background-color: #000;
 	float: left;
 	height: 800px;
 	overflow: hidden;
@@ -77,7 +107,7 @@ nav {
 	display: block;
 	left: -220px;
 	z-index: 0;
-	opacity: 0.7;
+	opacity: .7;
 }
 
 .gallery_banner {
@@ -93,6 +123,149 @@ nav {
 	line-height: 44px;
 	opacity: 0.6;
 	font-weight: 700;
-	border-bottom: 2px solid black;
+	border-bottom: 4px solid black;
 	text-transform: uppercase;
+}
+
+.gallery_nav:hover img{
+	opacity: 1;
+}
+
+.gallery_nav:hover .gallery_banner{
+	opacity: 1;
+	background-color: #fff;
+}
+
+
+.about {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	background-color: #fff;
+}
+
+.about_content {
+	margin: 0px auto;
+	width: 1000px;
+	height: 500px;
+}
+
+.about_photo_container {
+	width: 500px;
+	height: 500px;
+}
+
+.ryan_photo {
+	width: 500px;
+	height: 500px;
+	float: left;
+	position: absolute;
+	overflow: hidden;
+}
+
+.ryan_photo_alt {
+	width: 500px;
+	height: 500px;
+	overflow: hidden;
+}
+
+.ryan_photo:hover {
+	opacity: 0.0;
+}
+
+.about_copy {
+	width: 500px;
+	display: inline-block;
+}
+
+.bar_outline {
+	border: 1px solid #000;
+	margin: 5px 0px;
+	height: 10px;
+}
+
+.bar {
+	background-color: #000;
+	height: 100%
+}
+
+.bar_75 {
+	width: 75%
+}
+
+.bar_100 {
+	width: 100%;
+}
+
+.bar_25 {
+	width: 25%;
+}
+
+.bar_10 {
+	width: 10%;
+}
+
+.bar_50 {
+	width: 50%;
+}
+
+.gallery_container {
+	background-color: #000;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 544px;
+}
+
+.gallery_title {
+	background-color: #000;
+	color: #fff;
+	top: -10px;
+	left: 100px;
+	position: absolute;
+	padding: 10px;
+	z-index: 1;
+	font-size: 15px;
+}
+
+.gallery_photo_main {
+	width: 50%;
+	height: 500px;
+	display: block;
+	position: relative;
+	padding: 2px;
+}
+
+.gallery_photo_secondary {
+	width: 25%;
+	height: 500px;
+	display: block;
+	position: relative;
+	padding: 2px;
+}
+
+.gallery_photo_alt {
+	width: 25%;
+	height: 250px;
+	display: block;
+	position: relative;
+	padding: 2px;
+}
+
+.booking_container {
+	background-color: #fff;
+	position: relative;
+	width: 100%;
+}
+
+.booking_content {
+	margin: 0px auto;
+	width: 1000px;
+	padding: 10px;
+}
+
+.booking_section {
+	width: 240px;
+	border-top: 1px solid #000;
+	margin: 5px;
 }
