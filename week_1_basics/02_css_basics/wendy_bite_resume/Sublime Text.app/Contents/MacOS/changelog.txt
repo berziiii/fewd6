@@ -1,3 +1,22 @@
+Build 3065
+----------
+Release Date: 27 August 2014
+
+    * Added sidebar icons
+    * Added sidebar loading indicators
+    * Sidebar remembers which folders are expanded
+    * Tweaked window closing behavior when pressing ctrl+w / cmd+w
+    * Improved quote auto pairing logic
+    * Selected group is now stored in the session
+    * Added remember_full_screen setting
+    * Fixed a lockup when transitioning from a blinking to a solid caret
+    * Fixed a crash in plugin_host
+    * Fixed a crash triggered by Goto Anything cloning views
+    * Windows: Added command line helper, subl.exe
+    * OSX: Added 'New Window' entry to dock menu
+    * Posix: Using correct permissions for newly created files and folders
+    * API: Updated to Python 3.3.3
+
 Build 3059
 ----------
 Release Date: 17 December 2013

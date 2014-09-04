@@ -34,8 +34,39 @@
 	border-bottom: 44px solid #000;
 }
 
+.grid {
+	max-width: 1000px;
+	margin: 0px auto;
+}
+
+.col {
+	float: left;
+}
+
+.col-1-4 {
+	width: 25%;
+}
+
+.col-1-2 {
+	width: 50%;
+}
+
+.col:first-child {
+	padding-left: 0px;
+}
+
+.col:last-child {
+	padding-right: 0px;
+}
+
+html {
+	font-size: 16px;
+}
+
 body {
+	font-size: 1rem;
 	background-color: #000;
+	max-width: 2000px;
 	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 300;
@@ -56,8 +87,30 @@ nav {
 	z-index: 2
 }
 
+ul {
+	padding: 0px;
+}
+
 li {
 	list-style: none;
+}
+
+h2 {
+	font-size: 1.5rem
+}
+
+
+h3 {
+	font-size: 1.1rem;
+}
+
+p {
+	font-weight: 300;
+}
+
+footer {
+	background-color: #000;
+	width: 100%;
 }
 
 .logo {
@@ -144,12 +197,6 @@ li {
 	background-color: #fff;
 }
 
-.about_content {
-	margin: 0px auto;
-	width: 1000px;
-	height: 500px;
-}
-
 .about_photo_container {
 	width: 500px;
 	height: 500px;
@@ -225,7 +272,7 @@ li {
 	position: absolute;
 	padding: 10px;
 	z-index: 1;
-	font-size: 15px;
+	font-size: .9375em;
 }
 
 .gallery_photo_main {
@@ -258,14 +305,53 @@ li {
 	width: 100%;
 }
 
-.booking_content {
-	margin: 0px auto;
-	width: 1000px;
-	padding: 10px;
-}
-
 .booking_section {
-	width: 240px;
+	width: 230px;
+	position: relative;
+	height: 300px;
 	border-top: 1px solid #000;
 	margin: 5px;
+}
+
+.book_button {
+	font-size: 1.2;
+	font-weight: 700;
+	padding: 15px;
+	background-color: #000;
+	color: #fff;
+}
+
+.book_paragraph {
+	margin-bottom: 100px;
+}
+
+.wedding_paragraph {
+	margin-bottom: 83px;
+}
+
+.footer_container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .col {
+    float: none;
+    padding: 0;
+  }
+  
+  [class*="col-"] {
+    width: 50%;
+    float:left;
+  }
+
+  .gallery_nav {
+  	width: 100%;
+  	float: none;
+  }
+
+  .gallery_container {
+  	width: 100%;
+  }
 }

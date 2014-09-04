@@ -15,14 +15,14 @@
 	<key>LSMinimumSystemVersion</key>
 	<string>10.7</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2006-2013 Sublime HQ Pty Ltd</string>
+	<string>Copyright © 2006-2014 Sublime HQ Pty Ltd</string>
 	<key>CFBundleName</key>
 	<string>Sublime Text</string>
 
 	<key>CFBundleVersion</key>
-	<string>3059</string>
+	<string>3065</string>
 	<key>CFBundleShortVersionString</key>
-	<string>Build 3059</string>
+	<string>Build 3065</string>
 
 	<key>NSPrincipalClass</key>
 	<string>PXApplication</string>
