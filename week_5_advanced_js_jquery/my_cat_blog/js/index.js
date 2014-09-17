@@ -19,23 +19,23 @@ var posts = [
 	}
 ]
 
-function generateBlogSection(posts) {
-var ret = '<div class="post clearfix">'
-ret += '<img class="post-image float-left" src="' + posts.image + '">';
+function generateBlogSection(post) {
+var ret = ''
+ret += '<div class="post clearfix">'
+ret += '<img class="post-image float-left" src="' + post.image + '">';
 ret += '<div class="post-content float-left">';
-ret += '<h3 class="post-title">' + posts.title + '!' + '</h3>';
+ret += '<h3 class="post-title">' + post.title + '!' + '</h3>';
 ret += '<p>';
-ret += posts.snippet;
+ret += post.snippet;
 ret += '</p>';
 ret += '</div>';
 ret += '</div>';
 return ret;
 }
 
-
 for (var i = 0; i < posts.length; i++) {
 	html += generateBlogSection(posts[i]);
 }
 
-document.getElementById("posts").innerHTML = html
+document.getElementById('posts').innerHTML = html;
 
